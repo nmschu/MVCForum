@@ -1,0 +1,51 @@
+﻿@model IEnumerable<AdventureTime.Data.Entities.AdventureTime_Story>
+
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.StoryTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StoryGenre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AuthorID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateCreated)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.StoryTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StoryGenre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AuthorID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DateCreated)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.StoryID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.StoryID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.StoryID })
+        </td>
+    </tr>
+}
+
+</table>

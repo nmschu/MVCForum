@@ -1,0 +1,75 @@
+﻿@model IEnumerable<AdventureTime.Data.Entities.AdventureTime_Paragraph>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.StoryID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ParagraphContent)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ParagraphImageSrc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AudioSrc)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChoiceOne)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChoiceTwo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChoiceThree)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChoiceFour)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.StoryID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ParagraphContent)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ParagraphImageSrc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AudioSrc)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChoiceOne)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChoiceTwo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChoiceThree)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChoiceFour)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ParagraphID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ParagraphID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ParagraphID })
+        </td>
+    </tr>
+}
+
+</table>

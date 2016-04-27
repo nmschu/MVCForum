@@ -1,0 +1,82 @@
+﻿@model AdventureTime.Data.Entities.AdventureTime_Paragraph
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AdventureTime_Paragraph</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StoryID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StoryID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ParagraphContent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ParagraphContent)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ParagraphImageSrc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ParagraphImageSrc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AudioSrc)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AudioSrc)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChoiceOne)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChoiceOne)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChoiceTwo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChoiceTwo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChoiceThree)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChoiceThree)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ChoiceFour)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChoiceFour)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ParagraphID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

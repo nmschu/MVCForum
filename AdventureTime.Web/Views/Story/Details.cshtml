@@ -1,0 +1,50 @@
+﻿@model AdventureTime.Data.Entities.AdventureTime_Story
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>AdventureTime_Story</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.StoryTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StoryTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StoryGenre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StoryGenre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AuthorID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AuthorID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateCreated)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateCreated)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.StoryID }) |
+    @Html.ActionLink("Back to List", "List")
+</p>

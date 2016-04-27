@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureTime.Data", "AdventureTime.Data\AdventureTime.Data.csproj", "{B006E8A0-18C3-44A3-94EA-8C2F8B9B8F45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdventureTime.Web", "AdventureTime.Web\AdventureTime.Web.csproj", "{1E22CA2F-9FB0-4C38-85C4-D1985E02E25B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCForum", "MVCForum\MVCForum.csproj", "{AD59C897-ECD0-4096-84F6-421DD0F81BCD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B006E8A0-18C3-44A3-94EA-8C2F8B9B8F45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B006E8A0-18C3-44A3-94EA-8C2F8B9B8F45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B006E8A0-18C3-44A3-94EA-8C2F8B9B8F45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B006E8A0-18C3-44A3-94EA-8C2F8B9B8F45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E22CA2F-9FB0-4C38-85C4-D1985E02E25B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E22CA2F-9FB0-4C38-85C4-D1985E02E25B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E22CA2F-9FB0-4C38-85C4-D1985E02E25B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E22CA2F-9FB0-4C38-85C4-D1985E02E25B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD59C897-ECD0-4096-84F6-421DD0F81BCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD59C897-ECD0-4096-84F6-421DD0F81BCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD59C897-ECD0-4096-84F6-421DD0F81BCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD59C897-ECD0-4096-84F6-421DD0F81BCD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

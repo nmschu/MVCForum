@@ -1,0 +1,35 @@
+﻿p{
+    color: white;
+}
+
+ul{
+    color: white;
+}
+
+
+.carousel-inner > .item > img{
+    height: 35em;
+    width: 55em;
+    margin: auto;
+}
+
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  border-width: 0px;
+}
+
+.container-fluid{
+    margin-left: 1.5em;
+}
+
+.col-sm-8 {
+    outline: 2px solid orange;
+    /*overflow-y: scroll;      this was put in the style tag in the html... was giving scroll bar for otehr stuff*/
+}
+.col-sm-4{
+    outline: 2px solid green;
+    /*overflow-y: scroll;*/
+}
